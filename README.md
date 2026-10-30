@@ -35,4 +35,21 @@ banco/         generated index of the content bank
 
 ## Status
 
-Verifier works (90/90 tests pass on the staged copy). Known blind spot, documented in the product docs: a promise with no figure and no listed superlative ("you'll sell more") can pass. It does not check audio or video, and it does not generate scripts. Docs and rules are in Spanish.
+🟢 Verifier works (90/90 tests pass on the staged copy). Known blind spot, documented in the product docs: a promise with no figure and no listed superlative ("you'll sell more") can pass. It does not check audio or video, and it does not generate scripts. Docs and rules are in Spanish.
+
+## Folder guide
+
+| Folder | What it holds |
+|---|---|
+| [banco/](banco/README.md) | Content bank and its generated index |
+| [banco/piezas/](banco/piezas/README.md) | Piece files checked by the validators (empty in this copy) |
+| [codigo/](codigo/README.md) | Validators and the rules checker |
+| [codigo/tests/](codigo/tests/README.md) | 90-check test runner and fixtures |
+| [design-reference/](design-reference/README.md) | Approved design references |
+| [docs/](docs/README.md) | Product documentation |
+| [docs/product/](docs/product/README.md) | Brief, scope, domain model, build plan and handoff |
+| [reglas/](reglas/README.md) | Business and style rules shared by the agent and the verifier |
+
+---
+
+Built by Monoga · [github.com/Monoga2025](https://github.com/Monoga2025)
