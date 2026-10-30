@@ -1,0 +1,12 @@
+# Riesgos de Agente Generador de Contenido
+
+| ID | Riesgo | Probabilidad | Impacto | Señal | Mitigación | Owner | Estado |
+|---|---|---|---|---|---|---|---|
+| R-001 | Salida genérica: el sistema produce contenido de plantilla indistinguible del de un competidor con la misma herramienta | Alta | Alto | Guiones que podrían publicar tres marcas distintas sin cambios | El contexto de marca es artefacto obligatorio; el sistema se niega a generar sin él; checklist de voz por pieza | Daniel | Open |
+| R-002 | Expectativa sobredimensionada: esperar "mejores resultados que una agencia" | Alta | Medio | Se pide estrategia, producción audiovisual o medición al sistema | Alcance declarado: velocidad, volumen de variantes y coste. Estrategia y medición son humanas | Daniel | Open |
+| R-003 | Dependencia de plugins de terceros (repos ajenos, licencias, cambios de esquema) | Media | Medio | La skill instalada cambia o desaparece y el flujo se rompe | Decidir en Fase 9; preferir conocimiento propio versionado; aislar cualquier adaptador externo | Daniel | Open |
+| R-004 | Fatiga de plantilla: el uso mecánico de AIDA vuelve el contenido predecible | Alta | Medio | La audiencia reconoce la estructura; caída de retención | Rotación de frameworks declarados (AIDA, PAS, BAB, Hook/Substance/Payoff) y variantes reales de hook | Daniel | Open |
+| R-005 | Afirmaciones no verificables: el modelo inventa beneficios, cifras o promesas de resultado | Media | Alto | Aparecen datos que el negocio no puede respaldar | Regla dura: no inventar beneficios, precios ni resultados; revisión humana en temas sensibles | Daniel | Open |
+| R-006 | Alcance elástico: "entrenar el agente" crece hacia estrategia, publicación automática o analítica | Alta | Medio | Nuevas peticiones fuera del Brief y del MVP | Control de cambios: todo crecimiento pasa por `CHANGE_REQUESTS.md` y reevaluación de alcance | Daniel | Open |
+| R-007 | Coste de API no acotado en generación por lotes | Media | Medio | Factura imprevista al generar muchas variantes | Diferir proveedor a Fase 9 y fijar límite de variantes por lote en Fase 2 | Daniel | Open |
+| R-008 | Sin remoto de git: el contexto de marca y el banco de piezas solo existen en el disco local | Media | Alto | Fallo de disco: se pierde el activo central del proyecto, incluido el contexto de marca, sin recuperación | Decisión de Daniel 2026-10-12: posponer. **Obligatorio** crear remoto privado antes de usar el sistema con contenido real. La Fase 16 no cierra con este punto abierto | Daniel | Open |
